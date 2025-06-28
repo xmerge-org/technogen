@@ -67,7 +67,7 @@ const OurApproach = () => {
                     Custom Strategy Development: &nbsp;
                   </span>
                   Based on your needs, we craft tailored BPO solutions — whether
-                  it's customer support, sales, collections, or back-office
+                  it&apos;s customer support, sales, collections, or back-office
                   operations.
                 </p>
               </div>
