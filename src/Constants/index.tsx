@@ -1,0 +1,1 @@
+export const BRAND_NAME = process.env.PUBLIC_NEXT_BRAND_NAME || "Technogen LLC";

@@ -1,103 +1,213 @@
-import Image from "next/image";
+import Header from "@/components/header";
+import { BRAND_NAME } from "@/Constants";
+import ExistingCustomer from "@/components/existingCustomer";
+import Wave from "@/components/wave";
+import Footer from "@/components/footer";
+import Contact from "@/components/contact";
+import WhyChooseUs from "@/components/whyChooseUs";
+import Services from "@/components/services";
+import VoiceNonVoiceServices from "@/components/voiceNonVoiceServices";
+import OurPolicies from "@/components/ourPolicies";
+import OurApproach from "@/components/ourApproach";
+import LeadershipSection from "@/components/leadershipSection";
+import { FileBadge } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <div className="bg-neutral-900">
+        <Header />
+        <div id="home">
+          <div className="overflow-hidden bg-neutral-900">
+            <div className="max-w-5xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">
+              <h1 className="font-semibold text-white capitalize text-5xl md:text-6xl">
+                <span className="text-[#ff0] ">{BRAND_NAME}:</span> Elevating
+                your customer support experience
+              </h1>
+              <div className="mt-5 max-w-4xl">
+                <p className="text-neutral-400 text-lg">
+                  Our mission is to have the most committed and skilled
+                  workforce in the industry in order to pioneer the highest
+                  level of customer satisfaction. And our vision is to be one of
+                  the market leader in providing quality BPO-enabled services to
+                  our domestic and Global Clients.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="relative overflow-hidden pt-4 bg-neutral-900">
+            <Wave />
+            <ExistingCustomer />
+          </div>
+          <div
+            id="services"
+            className="bg-neutral-900 bg-linear-to-t from-black to-transparent"
+          >
+            <div className="max-w-5xl px-4 xl:px-0 py-24 mx-auto">
+              <div className="max-w-3xl mb-10 lg:mb-14">
+                <h2 className="text-white font-semibold text-2xl md:text-4xl md:leading-tight">
+                  Our Services
+                </h2>
+                <p className="mt-1 text-neutral-400">
+                  We are committed to delivering reliable, timely, and
+                  cost-effective IT-enabled solutions that drive real value for
+                  our clients. By continuously improving our processes and
+                  staying aligned with evolving business needs, we aim to exceed
+                  expectations and build long-lasting partnerships.
+                </p>
+              </div>
+              <Services />
+              <VoiceNonVoiceServices />
+            </div>
+          </div>
+          <WhyChooseUs />
+          <div className="bg-neutral-900">
+            <div className="max-w-5xl px-4 xl:px-0 py-10 mx-auto">
+              <div className="border border-neutral-800 rounded-xl">
+                <div className="p-4 lg:p-8 bg-linear-to-bl from-neutral-800 via-neutral-900 to-neutral-950 rounded-xl">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-y-20 gap-x-12">
+                    <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                      <svg
+                        className="shrink-0 size-6 sm:size-8 text-[#ff0] mx-auto"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+                        <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+                        <path d="m21 3 1 11h-2" />
+                        <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+                        <path d="M3 4h8" />
+                      </svg>
+                      <div className="mt-3 sm:mt-5">
+                        <h3 className="text-lg sm:text-3xl font-semibold text-white">
+                          2,000+
+                        </h3>
+                        <p className="mt-1 text-sm sm:text-base text-neutral-400">
+                          Technogen partners
+                        </p>
+                      </div>
+                    </div>
+                    <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                      <div className="flex justify-center items-center -space-x-5">
+                        <img
+                          className="relative z-2 shrink-0 size-8 rounded-full border-3 border-neutral-800"
+                          src="https://images.unsplash.com/photo-1601935111741-ae98b2b230b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                          alt="Avatar"
+                        />
+                        <img
+                          className="relative z-1 shrink-0 size-8 rounded-full border-3 border-neutral-800 -mt-7"
+                          src="https://images.unsplash.com/photo-1570654639102-bdd95efeca7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                          alt="Avatar"
+                        />
+                        <img
+                          className="relative shrink-0 size-8 rounded-full border-3 border-neutral-800"
+                          src="https://images.unsplash.com/photo-1679412330254-90cb240038c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.5&w=320&h=320&q=80"
+                          alt="Avatar"
+                        />
+                      </div>
+                      <div className="mt-3 sm:mt-5">
+                        <h3 className="text-lg sm:text-3xl font-semibold text-white">
+                          85%
+                        </h3>
+                        <p className="mt-1 text-sm sm:text-base text-neutral-400">
+                          Happy customers
+                        </p>
+                      </div>
+                    </div>
+                    <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                      <svg
+                        className="shrink-0 size-6 sm:size-8 text-[#ff0] mx-auto"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
+                        <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
+                        <path d="m2 16 6 6" />
+                        <circle cx="16" cy="9" r="2.9" />
+                        <circle cx="6" cy="5" r="3" />
+                      </svg>
+                      <div className="mt-3 sm:mt-5">
+                        <h3 className="text-lg sm:text-3xl font-semibold text-white">
+                          $55M+
+                        </h3>
+                        <p className="mt-1 text-sm sm:text-base text-neutral-400">
+                          Ads managed yearly
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <OurApproach />
+          <LeadershipSection />
+          <OurPolicies />
+          <section
+            className="bg-neutral-950 py-20 text-white"
+          >
+            <div className="max-w-3xl mx-auto px-6 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Discover Our Capabilities
+              </h2>
+              <p className="text-neutral-400 mb-8">
+                Learn how Techno Gen BPO can transform your operations and
+                elevate customer experience. Download our detailed corporate
+                profile in just one click.
+              </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+              <div className="flex gap-4 justify-center items-center">
+                <a
+                href="/assets/files/Technogen_2025.pptx"
+                download
+                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold bg-[#ff0] text-black rounded-full shadow-md hover:bg-yellow-300 transition duration-300 group"
+              >
+                <svg
+                  className="w-5 h-5 group-hover:translate-y-1 transition"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"
+                  />
+                </svg>
+                Download Profile
+              </a>
+
+              <a
+                href="/files/TechnoGen-Certificate.pdf"
+                download
+                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold border border-yellow-400 text-yellow-400 rounded-full shadow-md hover:bg-yellow-400 hover:text-black transition group"
+              >
+                <FileBadge />
+                Download Certificate
+              </a>
+              </div>
+            </div>
+          </section>
+          <Contact />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+      <Footer />
+    </>
   );
 }
