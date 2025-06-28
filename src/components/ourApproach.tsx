@@ -17,7 +17,6 @@ const OurApproach = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center">
-          {/* Image */}
           <div className="aspect-w-16 aspect-h-9 lg:aspect-none">
             <img
               className="w-full object-cover rounded-xl"
@@ -26,7 +25,6 @@ const OurApproach = () => {
             />
           </div>
 
-          {/* Steps */}
           <div>
             <div className="mb-4">
               <h3 className="text-[#ff0] text-xs font-medium uppercase">
@@ -34,7 +32,6 @@ const OurApproach = () => {
               </h3>
             </div>
 
-            {/* Step 1 */}
             <div className="flex gap-x-5 ms-1">
               <div className="relative after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
                 <div className="relative z-10 size-8 flex justify-center items-center">
@@ -52,7 +49,6 @@ const OurApproach = () => {
               </div>
             </div>
 
-            {/* Step 2 */}
             <div className="flex gap-x-5 ms-1">
               <div className="relative after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
                 <div className="relative z-10 size-8 flex justify-center items-center">
@@ -73,7 +69,6 @@ const OurApproach = () => {
               </div>
             </div>
 
-            {/* Step 3 */}
             <div className="flex gap-x-5 ms-1">
               <div className="relative after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
                 <div className="relative z-10 size-8 flex justify-center items-center">
