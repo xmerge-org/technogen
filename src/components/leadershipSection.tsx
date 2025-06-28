@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 const leaders = [
   {
     name: "Durgesh Kumar Gupta",

@@ -29,7 +29,7 @@ export default function OurPolicies() {
           Our Policies
         </h2>
         <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-          We follow industry-standard security and operational protocols to ensure the confidentiality, integrity, and availability of your data and services. Here's a list of our formal security and compliance policies:
+          We follow industry-standard security and operational protocols to ensure the confidentiality, integrity, and availability of your data and services. Here&apos;s a list of our formal security and compliance policies:
         </p>
 
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left list-disc list-inside marker:text-primary">
