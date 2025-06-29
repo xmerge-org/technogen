@@ -11,7 +11,7 @@ import VoiceNonVoiceServices from "@/components/voiceNonVoiceServices";
 import OurPolicies from "@/components/ourPolicies";
 import OurApproach from "@/components/ourApproach";
 import LeadershipSection from "@/components/leadershipSection";
-import { FileBadge } from "lucide-react";
+import { Clock, FileBadge } from "lucide-react";
 
 export default function Home() {
   return (
@@ -124,30 +124,13 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
-                      <svg
-                        className="shrink-0 size-6 sm:size-8 text-[#ff0] mx-auto"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
-                        <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
-                        <path d="m2 16 6 6" />
-                        <circle cx="16" cy="9" r="2.9" />
-                        <circle cx="6" cy="5" r="3" />
-                      </svg>
+                      <Clock className="shrink-0 size-6 sm:size-8 text-[#ff0] mx-auto" />
                       <div className="mt-3 sm:mt-5">
                         <h3 className="text-lg sm:text-3xl font-semibold text-white">
-                          $55M+
+                          100K+
                         </h3>
                         <p className="mt-1 text-sm sm:text-base text-neutral-400">
-                          Something Add
+                          Support Hours Delivered
                         </p>
                       </div>
                     </div>
