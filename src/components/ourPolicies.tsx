@@ -28,7 +28,8 @@ export default function OurPolicies() {
     <h2 className="text-2xl md:text-3xl font-bold mb-6">Our Policies</h2>
 
     <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-      We follow industry-standard security and operational protocols to ensure the confidentiality, integrity, and availability of your data and services. Here's a list of our formal security and compliance policies:
+      We follow industry-standard security and operational protocols to ensure the confidentiality, integrity, 
+      and availability of your data and services. Here&apos;s a list of our formal security and compliance policies:
     </p>
 
     <div className="max-w-[620px] mx-auto flex flex-col sm:flex-row justify-center gap-8 text-left p-6">

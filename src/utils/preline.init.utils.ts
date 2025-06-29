@@ -1,25 +1,9 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 
-declare global {
-  interface Window {
-    _: typeof _;
-    $: typeof $;
-    jQuery: typeof $;
-    DataTable: typeof $.fn.dataTable;
-    noUiSlider: typeof noUiSlider;
-    VanillaCalendarPro: typeof VanillaCalendarPro;
-    HSStaticMethods: {
-      autoInit?: () => void;
-    };
-  }
-}
-
-'use client';
-
-import { usePathname } from 'next/navigation';
-
+// Optional third-party libraries
 import $ from 'jquery';
 import _ from 'lodash';
 import noUiSlider from 'nouislider';
@@ -34,6 +18,7 @@ window.DataTable = $.fn.dataTable;
 window.noUiSlider = noUiSlider;
 window.VanillaCalendarPro = VanillaCalendarPro;
 
+// Preline UI
 async function loadPreline() {
   return import('preline/dist/index.js');
 }
