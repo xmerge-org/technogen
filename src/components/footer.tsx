@@ -102,12 +102,12 @@ const Footer = () => {
         <div className="w-full max-w-5xl px-4 xl:px-0 py-10 lg:pt-16 mx-auto">
           <div className="flex justify-around items-center">
             <div className="flex justify-start md:w-full items-center">
-              <Link href="https://technogenllc.com" aria-label="Techogen LLC">
+              <Link href="https://technogenllc.com" aria-label="Techno Gen LLC">
                 <div className="flex flex-row gap-2 justify-center items-center rounded-md focus:outline-hidden focus:opacity-80">
                   <div className="relative w-8 h-8">
                     <Image
                       src="/logo.png"
-                      alt="Techogen LLC Logo"
+                      alt="Techno Gen LLC Logo"
                       fill
                       className="object-contain"
                     />

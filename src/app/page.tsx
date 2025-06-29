@@ -12,19 +12,21 @@ import OurPolicies from "@/components/ourPolicies";
 import OurApproach from "@/components/ourApproach";
 import LeadershipSection from "@/components/leadershipSection";
 import { Clock, FileBadge } from "lucide-react";
+import AOSInit from "@/utils/aos.init.utils";
 
 export default function Home() {
   return (
     <>
+    <AOSInit />
       <div className="bg-neutral-900">
         <Header />
         <div id="home">
           <div className="overflow-hidden bg-neutral-900">
-            <div className="max-w-5xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">
-              <h1 className="font-semibold text-white capitalize text-5xl md:text-6xl">
-                <span className="text-[#ff0] ">{BRAND_NAME}:</span>
+            <div className="max-w-5xl mx-auto px-4 xl:px-0 pt-14 lg:pt-32 md:pb-24 pb-8">
+              <h1 className="font-semibold text-white capitalize text-4xl md:text-6xl">
+                <span className="text-[#ff0]">{BRAND_NAME}:</span>
                 <br />
-                <span className="text-2xl">Elevating your customer support experience</span>
+                <span className="text-base md:text-2xl">Elevating your customer support experience</span>
               </h1>
               <div className="mt-5 max-w-4xl">
                 <p className="text-neutral-400 text-lg">

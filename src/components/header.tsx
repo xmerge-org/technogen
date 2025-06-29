@@ -8,12 +8,12 @@ const Header = () => {
     <header className="sticky top-4 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full before:absolute before:inset-0 before:max-w-5xl before:mx-2 lg:before:mx-auto before:rounded-[26px] before:bg-neutral-800/30 before:backdrop-blur-md">
       <nav className="relative max-w-5xl w-full flex flex-wrap md:flex-nowrap basis-full items-center justify-between py-2 ps-5 pe-2 md:py-0 mx-2 lg:mx-auto">
         <div className="flex justify-start md:w-full items-center">
-          <Link href="https://technogenllc.com" aria-label="Techogen LLC">
+          <Link href="https://technogenllc.com" aria-label="Techno Gen LLC">
             <div className="flex flex-row gap-2 justify-center items-center rounded-md focus:outline-hidden focus:opacity-80">
               <div className="relative w-8 h-8">
                 <Image
                   src="/logo.png"
-                  alt="Techogen LLC Logo"
+                  alt="Techno Gen LLC Logo"
                   fill
                   className="object-contain"
                 />
@@ -34,7 +34,6 @@ const Header = () => {
               Request demo
             </a>
           </div>
-
           <div className="md:hidden">
             <button
               type="button"
