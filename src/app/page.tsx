@@ -28,11 +28,10 @@ export default function Home() {
               </h1>
               <div className="mt-5 max-w-4xl">
                 <p className="text-neutral-400 text-lg">
-                  Our mission is to have the most committed and skilled
-                  workforce in the industry in order to pioneer the highest
-                  level of customer satisfaction. And our vision is to be one of
-                  the market leader in providing quality BPO-enabled services to
-                  our domestic and Global Clients.
+                  At Techno Gen, our mission is to cultivate a highly skilled and dedicated workforce that 
+                  consistently delivers exceptional customer experiences. Guided by this commitment, our vision 
+                  is to become a global leader in BPO-enabled services — empowering businesses with innovative, 
+                  efficient, and reliable solutions across both domestic and international markets.
                 </p>
               </div>
             </div>

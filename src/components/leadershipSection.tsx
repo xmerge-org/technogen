@@ -11,7 +11,7 @@ const leaders = [
       "Multi-Channel, Multi-Language Operations",
       "Training & Quality, Business Process Improvement, RFI, RFP and RFQ processes",
       "People Management, Employee Development, Coaching",
-      "Problem Solving, Breakthrough Thinking, Conflict Management, Best Practices"
+      "Problem Solving, Breakthrough Thinking, Conflict Management, Best Practices",
     ],
     competencies: [
       "Strategic thinker: Understands the bigger picture and key issue relationships",
@@ -20,8 +20,8 @@ const leaders = [
       "Team Player: Promotes collaboration and builds enthusiastic teams",
       "High-energy and decisive with strong interpersonal skills",
       "Creative: Finds innovative, non-traditional solutions",
-      "Get it done: Believes in actions over words"
-    ]
+      "Get it done: Believes in actions over words",
+    ],
   },
   {
     name: "Sonu Kumar",
@@ -34,50 +34,42 @@ const leaders = [
       "Financial strategy implementation",
       "Compliance with financial regulations",
       "Supporting business development and initiatives",
-      "Collaboration with operations on finance matters"
+      "Collaboration with operations on finance matters",
     ],
     competencies: [
       "Deep understanding of finance disciplines including accounting, budgeting, risk, and planning",
       "Strategic awareness of financial decisions and business impact",
       "Highly adaptive in dynamic business environments",
       "Collaborates effectively with cross-functional teams",
-      "Handles broad tasks, reducing need for multiple specialists"
-    ]
-  }
+      "Handles broad tasks, reducing need for multiple specialists",
+    ],
+  },
 ];
 
 export default function LeadershipSection() {
   return (
-    <section id="about" className="bg-neutral-900 text-white py-16">
+    <section id="about" className="bg-neutral-900 text-white py-32">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-14">Leadership</h2>
+        <h2 className="text-3xl font-bold text-center mb-14">About us</h2>
 
-        {leaders.map((leader, index) => (
-          <div
-            key={index}
-            className={`flex flex-col lg:flex-row ${
-              index % 2 !== 0 ? "lg:flex-row-reverse" : ""
-            } gap-10 lg:gap-16 items-center mb-16`}
-          >
-            {/* Image */}
-            <div className="w-full lg:w-1/2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {leaders.map((leader, index) => (
+            <div
+              key={index}
+              className="bg-neutral-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition duration-300"
+            >
               <img
                 src={leader.image}
                 alt={leader.name}
-                className="rounded-xl w-full object-cover max-h-[500px]"
+                className="rounded-full w-32 h-32 object-cover mb-4 border border-neutral-700"
               />
-            </div>
-
-            {/* Text Content */}
-            <div className="w-full lg:w-1/2">
-              <h3 className="text-2xl font-semibold text-[#ff0] mb-2">
+              <h3 className="text-xl font-semibold text-[#ff0] mb-1">
                 {leader.name}
               </h3>
-              <p className="text-neutral-300 mb-4">{leader.title}</p>
-
-              <h4 className="text-white font-medium mb-1">Overview</h4>
-              <p className="text-neutral-400 mb-4 whitespace-pre-line">{leader.overview}</p>
-
+              <p className="text-sm text-neutral-400 mb-4">{leader.title}</p>
+              <p className="text-sm text-neutral-300 leading-relaxed max-w-md">
+                {leader.overview}
+              </p>
               {/* <h4 className="text-white font-medium mb-1">Specialties</h4>
               <ul className="list-disc list-inside text-neutral-400 mb-4">
                 {leader.specialties.map((item, i) => (
@@ -92,8 +84,8 @@ export default function LeadershipSection() {
                 ))}
               </ul> */}
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -44,7 +44,7 @@ const ExistingCustomer = () => {
                 key={index}
                 className="flex flex-col flex-wrap gap-2 items-center"
                 >
-                <div className="relative w-12 h-12 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="relative w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300">
                     <Image
                     src={customer.logo}
                     alt={customer.alt}
