@@ -4,9 +4,7 @@ const leaders = [
     name: "Durgesh Kumar Gupta",
     title: "Director – Operations",
     image: "/assets/imgs/leaders/durgesh.png",
-    overview: `Dedicated and enthusiastic, this roll-up-your-sleeves executive has expertise creating and leading effective support teams across a range of industries including gaming, banking, telecom and retail. 
-    Always demonstrates the ability to instill a common vision and develop dynamic teams based on trust and mutual respect.
-    Worked with iEnergizer on international projects like CreditOne Bank, DSW, EA and domestic ones like AirCel, RBL Bank, ClixCapital, Hero Fincorp.`,
+    overview: `Dedicated and enthusiastic, this roll-up-your-sleeves executive has expertise creating and leading effective support teams across a range of industries including gaming, banking, telecom and retail.Always demonstrates the ability to instill a common vision and develop dynamic teams based on trust and mutual respect.`,
     specialties: [
       "Customer Experience, Strategy and Implementation, Operations Management, Delivery",
       "CRM, KPI Management",
@@ -29,9 +27,7 @@ const leaders = [
     name: "Sonu Kumar",
     title: "Director – Finance",
     image: "/assets/imgs/leaders/sonu.png",
-    overview: `Committed to excellent communication and leadership, Sonu has driven the finance department towards operational excellence and strategic growth. 
-    Over 5+ years of industry experience, leading programs that ensure fiscal responsibilities and strong community/professional relationships.
-    Previously worked with TATA AIA financial operations overseeing a 35-member team.`,
+    overview: `Committed to excellent communication and leadership, Sonu has driven the finance department towards operational excellence and strategic growth.Over 5+ years of industry experience, leading programs that ensure fiscal responsibilities and strong community/professional relationships.`,
     specialties: [
       "Financial reporting and analysis",
       "Managing budgets and forecasts",
@@ -82,7 +78,7 @@ export default function LeadershipSection() {
               <h4 className="text-white font-medium mb-1">Overview</h4>
               <p className="text-neutral-400 mb-4 whitespace-pre-line">{leader.overview}</p>
 
-              <h4 className="text-white font-medium mb-1">Specialties</h4>
+              {/* <h4 className="text-white font-medium mb-1">Specialties</h4>
               <ul className="list-disc list-inside text-neutral-400 mb-4">
                 {leader.specialties.map((item, i) => (
                   <li key={i}>{item}</li>
@@ -94,7 +90,7 @@ export default function LeadershipSection() {
                 {leader.competencies.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
           </div>
         ))}

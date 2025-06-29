@@ -228,10 +228,10 @@ const Contact = () => {
 
                 <a
                   className="mt-1 text-neutral-400 text-sm hover:text-neutral-200 focus:outline-hidden focus:text-neutral-200"
-                  href="mailto:hello@technogenllc.com"
+                  href="mailto:info@technogenllc.com"
                   target="_blank"
                 >
-                  hello@technogenllc.com
+                  info@technogenllc.com
                 </a>
               </div>
             </div>

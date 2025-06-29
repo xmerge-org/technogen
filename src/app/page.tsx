@@ -1,3 +1,4 @@
+'use client';
 import Header from "@/components/header";
 import { BRAND_NAME } from "@/Constants";
 import ExistingCustomer from "@/components/existingCustomer";
@@ -21,8 +22,9 @@ export default function Home() {
           <div className="overflow-hidden bg-neutral-900">
             <div className="max-w-5xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">
               <h1 className="font-semibold text-white capitalize text-5xl md:text-6xl">
-                <span className="text-[#ff0] ">{BRAND_NAME}:</span> Elevating
-                your customer support experience
+                <span className="text-[#ff0] ">{BRAND_NAME}:</span>
+                <br />
+                <span className="text-2xl">Elevating your customer support experience</span>
               </h1>
               <div className="mt-5 max-w-4xl">
                 <p className="text-neutral-400 text-lg">
@@ -87,10 +89,10 @@ export default function Home() {
                       </svg>
                       <div className="mt-3 sm:mt-5">
                         <h3 className="text-lg sm:text-3xl font-semibold text-white">
-                          2,000+
+                          10+
                         </h3>
                         <p className="mt-1 text-sm sm:text-base text-neutral-400">
-                          Technogen partners
+                          Techno Gen partners
                         </p>
                       </div>
                     </div>
@@ -114,7 +116,7 @@ export default function Home() {
                       </div>
                       <div className="mt-3 sm:mt-5">
                         <h3 className="text-lg sm:text-3xl font-semibold text-white">
-                          85%
+                          90%
                         </h3>
                         <p className="mt-1 text-sm sm:text-base text-neutral-400">
                           Happy customers
@@ -145,7 +147,7 @@ export default function Home() {
                           $55M+
                         </h3>
                         <p className="mt-1 text-sm sm:text-base text-neutral-400">
-                          Ads managed yearly
+                          Something Add
                         </p>
                       </div>
                     </div>
@@ -165,7 +167,7 @@ export default function Home() {
                 Discover Our Capabilities
               </h2>
               <p className="text-neutral-400 mb-8">
-                Learn how Techno Gen BPO can transform your operations and
+                Learn how Techno Gen LLC can transform your operations and
                 elevate customer experience. Download our detailed corporate
                 profile in just one click.
               </p>
@@ -173,8 +175,11 @@ export default function Home() {
               <div className="flex gap-4 justify-center items-center">
                 <a
                 href="/assets/files/Technogen_2025.pptx"
-                download
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold bg-[#ff0] text-black rounded-full shadow-md hover:bg-yellow-300 transition duration-300 group"
+                download={"TechnoGen-Corporate-Profile-2025.pptx"}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.preventDefault()}
+                className="disable inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold bg-[#ff0] text-black rounded-full shadow-md hover:bg-yellow-300 transition duration-300 group"
               >
                 <svg
                   className="w-5 h-5 group-hover:translate-y-1 transition"
@@ -194,8 +199,11 @@ export default function Home() {
               </a>
 
               <a
-                href="/files/TechnoGen-Certificate.pdf"
-                download
+                href="/assets/files/TechnoGen-Certificate.pdf"
+                download={"TechnoGen-Certificate.pdf"}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.preventDefault()}
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold border border-yellow-400 text-yellow-400 rounded-full shadow-md hover:bg-yellow-400 hover:text-black transition group"
               >
                 <FileBadge />

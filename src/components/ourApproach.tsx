@@ -9,7 +9,7 @@ const OurApproach = () => {
             Our Approach
           </h2>
           <p className="mt-1 text-neutral-400">
-            At Techno Gen BPO, our approach is rooted in reliability,
+            At Techno Gen LLC, our approach is rooted in reliability,
             innovation, and continuous improvement — enabling businesses to
             scale operations efficiently while delivering exceptional customer
             experiences.
@@ -21,7 +21,7 @@ const OurApproach = () => {
             <img
               className="w-full object-cover rounded-xl"
               src="https://images.unsplash.com/photo-1587614203976-365c74645e83?q=80&w=480&h=600&auto=format&fit=crop"
-              alt="Techno Gen BPO Team"
+              alt="Techno Gen LLC Team"
             />
           </div>
 

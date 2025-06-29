@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
             Why choose us?
           </h2>
           <p className="mt-1 text-neutral-400">
-            Here&apos;s why Techno Gen BPO is the right choice for your business
+            Here&apos;s why Techno Gen LLC is the right choice for your business
             — where expertise, efficiency, and customer-centric service come
             together to drive real results.
           </p>
@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
                     />
                   </div>
                   <div className="ml-4">
-                    <p className="text-white font-semibold">Techno Gen BPO</p>
+                    <p className="text-white font-semibold">Techno Gen LLC</p>
                     <p className="text-neutral-400 text-sm">
                       Customer Service Team
                     </p>
