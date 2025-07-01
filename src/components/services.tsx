@@ -42,13 +42,13 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 text-white">
       {services.map((service, index) => (
         <div key={index} className="flex items-start gap-4">
           <div className="flex-shrink-0">{service.icon}</div>
           <div>
             <h3 className="text-lg font-semibold">{service.title}</h3>
-            <p className="text-muted-foreground">{service.description}</p>
+            <p className="text-neutral-400">{service.description}</p>
           </div>
         </div>
       ))}

@@ -3,7 +3,6 @@
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 
-// Optional third-party libraries
 import $ from 'jquery';
 import _ from 'lodash';
 import noUiSlider from 'nouislider';
@@ -18,7 +17,6 @@ window.DataTable = $.fn.dataTable;
 window.noUiSlider = noUiSlider;
 window.VanillaCalendarPro = VanillaCalendarPro;
 
-// Preline UI
 async function loadPreline() {
   return import('preline/dist/index.js');
 }
